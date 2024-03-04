@@ -23,3 +23,16 @@
 .fw-800 {
   font-weight: 800;
 }
+
+.body-text-adaptive {
+  //
+  font-size: 20px;
+
+  @media (min-width: $md) {
+    font-size: 24px;
+  }
+  @media (min-width: $xl) {
+    font-size: 28px;
+  }
+  //
+}

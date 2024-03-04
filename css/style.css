@@ -3002,6 +3002,20 @@ select {
   font-weight: 800;
 }
 
+.body-text-adaptive {
+  font-size: 20px;
+}
+@media (min-width: 768px) {
+  .body-text-adaptive {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1200px) {
+  .body-text-adaptive {
+    font-size: 28px;
+  }
+}
+
 /* Displays */
 @media (min-width: 0) {
   .d-xs-inline {
