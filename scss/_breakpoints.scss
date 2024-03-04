@@ -1,0 +1,36 @@
+// breakpoints
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+$xxxl: 1600px;
+
+// container width
+$grid-xs: 0;
+$grid-sm: 528px;
+$grid-md: 720px;
+$grid-lg: 928px;
+$grid-xl: 1136px;
+$grid-xxl: 1320px;
+$grid-xxxl: 1504px;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  xxxl: 1600px,
+);
+
+$container-breakpoints: (
+  576px: 528px,
+  768px: 720px,
+  992px: 928px,
+  1200px: 1136px,
+  1400px: 1320px,
+  1600px: 1504px,
+);

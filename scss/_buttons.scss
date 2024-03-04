@@ -1,0 +1,74 @@
+@import 'colors';
+
+/* Buttons */
+
+.button {
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  user-select: none !important;
+  transition: all 0.5s ease-out;
+  font-weight: 400;
+  -webkit-font-smoothing: subpixel-antialiased;
+  color: $white;
+  display: inline-block;
+  position: relative;
+  letter-spacing: 0.4px;
+  cursor: pointer;
+  text-align: center;
+
+  // button 20px
+  @mixin button-20 {
+    font-size: 20px;
+    padding: 16.4px 31.4px 16px 31.4px; // 12px-24px
+    line-height: 17.4px;
+  }
+
+  &.btn20 {
+    @include button-20;
+  }
+  // end button 20px
+
+  // button 24px
+  @mixin button-24 {
+    font-size: 24px;
+    padding: 16.72px 38px 16.32px 38px; // 16px-32px
+    line-height: 24.3px;
+  }
+
+  &.btn24 {
+    @include button-24;
+  }
+  // end button 24px
+
+  // button 28px
+  @mixin button-28 {
+    font-size: 28px;
+    padding: 26px 51.4px 26px 51.4px; // 16px-32px
+    line-height: 24.3px;
+  }
+
+  &.btn28 {
+    @include button-28;
+  }
+  // end button 28px
+
+  &.adaptive {
+    @include button-20;
+
+    @media (min-width: $md) {
+      @include button-24;
+    }
+    @media (min-width: $xl) {
+      @include button-28;
+    }
+  }
+  //
+  &:disabled {
+    opacity: 0.7;
+  }
+  //
+  &:hover {
+    transform: translateY(4px);
+  }
+}

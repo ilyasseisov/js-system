@@ -1,0 +1,25 @@
+/* Displays */
+@import 'breakpoints';
+
+@each $breakpoint, $value in $grid-breakpoints {
+  @media (min-width: $value) {
+    .d-#{$breakpoint}-inline {
+      display: inline;
+    }
+    .d-#{$breakpoint}-inline-block {
+      display: inline-block;
+    }
+    .d-#{$breakpoint}-block {
+      display: block;
+    }
+    .d-#{$breakpoint}-flex {
+      display: flex;
+    }
+    .d-#{$breakpoint}-grid {
+      display: grid;
+    }
+    .d-#{$breakpoint}-none {
+      display: none;
+    }
+  }
+}

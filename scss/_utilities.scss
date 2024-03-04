@@ -1,0 +1,153 @@
+/* Utility classes */
+
+@import 'breakpoints';
+
+// margins and paddings
+@each $breakpoint, $value in $grid-breakpoints {
+  @media (min-width: $value) {
+    @for $i from -12 through 80 {
+      $size: 2px * $i;
+
+      // Margins
+      .mt-#{$breakpoint}-#{$size} {
+        margin-top: $size;
+      }
+      .mr-#{$breakpoint}-#{$size} {
+        margin-right: $size;
+      }
+      .mb-#{$breakpoint}-#{$size} {
+        margin-bottom: $size;
+      }
+      .ml-#{$breakpoint}-#{$size} {
+        margin-left: $size;
+      }
+      .m-#{$breakpoint}-#{$size} {
+        margin: $size;
+      }
+
+      // Paddings
+      .pt-#{$breakpoint}-#{$size} {
+        padding-top: $size;
+      }
+      .pr-#{$breakpoint}-#{$size} {
+        padding-right: $size;
+      }
+      .pb-#{$breakpoint}-#{$size} {
+        padding-bottom: $size;
+      }
+      .pl-#{$breakpoint}-#{$size} {
+        padding-left: $size;
+      }
+      .p-#{$breakpoint}-#{$size} {
+        padding: $size;
+      }
+    }
+  }
+}
+
+// margin-auto
+@each $breakpoint, $value in $grid-breakpoints {
+  @media (min-width: $value) {
+    .ma-#{$breakpoint} {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+// text-align
+@each $breakpoint, $value in $grid-breakpoints {
+  @media (min-width: $value) {
+    .tal-#{$breakpoint} {
+      text-align: left;
+    }
+    .tac-#{$breakpoint} {
+      text-align: center;
+    }
+    .tar-#{$breakpoint} {
+      text-align: right;
+    }
+  }
+}
+
+// relative centering
+@each $breakpoint, $value in $grid-breakpoints {
+  @media (min-width: $value) {
+    .self-horizontal-left-#{$breakpoint} {
+      position: relative;
+      left: 0;
+      transform: translateX(0);
+    }
+    .self-horizontal-center-#{$breakpoint} {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .self-horizontal-right-#{$breakpoint} {
+      position: relative;
+      left: 100%;
+      transform: translateX(-100%);
+    }
+  }
+}
+
+// border radius
+@each $breakpoint, $value in $grid-breakpoints {
+  @media (min-width: $value) {
+    @for $i from 0 through 20 {
+      $size: 2px * $i;
+
+      // Margins
+      .br-#{$breakpoint}-#{$size} {
+        border-radius: $size;
+      }
+    }
+  }
+}
+
+// flex direction column
+@each $breakpoint, $value in $grid-breakpoints {
+  @media (min-width: $value) {
+    .flex-direction-column-#{$breakpoint} {
+      flex-direction: column;
+    }
+    .flex-direction-row-#{$breakpoint} {
+      flex-direction: row;
+    }
+  }
+}
+
+// opacity
+@for $i from 0 through 10 {
+  $value: $i / 10;
+
+  .opacity-#{$i} {
+    opacity: $value;
+  }
+}
+
+// width
+@each $breakpoint, $value in $grid-breakpoints {
+  @media (min-width: $value) {
+    @for $i from 0 through 60 {
+      $size: 2px * $i;
+
+      .w-#{$breakpoint}-#{$size} {
+        width: $size;
+      }
+    }
+  }
+}
+
+// height
+@each $breakpoint, $value in $grid-breakpoints {
+  @media (min-width: $value) {
+    @for $i from 0 through 300 {
+      $size: 2px * $i;
+
+      .h-#{$breakpoint}-#{$size} {
+        height: $size;
+      }
+    }
+  }
+}

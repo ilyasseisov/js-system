@@ -1,0 +1,27 @@
+/* Colors */
+
+// variables
+$dark: #181818;
+$darker: #0a0a0a;
+$white: #fff;
+$white-dim: #ece9e4;
+$yellow: #ffd100;
+
+// map
+$colors: (
+  dark: $dark,
+  darker: $darker,
+  white: $white,
+  white-dim: $white-dim,
+  yellow: $yellow,
+);
+
+@each $color-name, $value in $colors {
+  .#{$color-name}-bg {
+    background-color: $value;
+  }
+
+  .#{$color-name}-color {
+    color: $value;
+  }
+}

@@ -1,0 +1,25 @@
+@use 'sass:math';
+@import 'breakpoints';
+
+/* Typography */
+
+@each $breakpoint, $value in $grid-breakpoints {
+  @media (min-width: $value) {
+    @for $i from 2 through 80 {
+      $size: 2px * $i;
+
+      .fsz-#{$breakpoint}-#{$size} {
+        font-size: $size;
+      }
+    }
+  }
+}
+
+// font weights
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
