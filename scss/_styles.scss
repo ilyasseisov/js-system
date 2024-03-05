@@ -14,12 +14,55 @@ body {
 }
 
 ::selection {
-  background: $yellow;
+  background: $white;
 }
 
 img {
   vertical-align: middle;
 }
+//
+
+.waitlist-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  flex-direction: column;
+  width: 100%;
+  //
+  @media (min-width: $lg) {
+    flex-direction: row;
+  }
+  //
+  input {
+    width: 100%;
+    //
+    @media (min-width: $lg) {
+      width: auto;
+      flex-grow: 3;
+    }
+    @media (min-width: $xl) {
+      padding: 18px;
+    }
+  }
+  //
+  button {
+    width: 100%;
+    border: 5.2px solid $yellow;
+    //
+    @media (min-width: $lg) {
+      width: auto;
+      flex-grow: 1;
+    }
+    //
+    @media (min-width: $xl) {
+      border: none;
+    }
+    //
+  }
+  //
+}
+
 //
 
 .go1 {

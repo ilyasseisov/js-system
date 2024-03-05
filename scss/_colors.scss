@@ -1,19 +1,25 @@
 /* Colors */
 
 // variables
+$dark-tint: #282828;
 $dark: #181818;
-$darker: #0a0a0a;
+$dark-shade: 101010;
+$grey: #d6d6d6;
 $white: #fff;
 $white-dim: #ece9e4;
 $yellow: #ffd100;
+$yellow-shade: #ffc200;
 
 // map
 $colors: (
+  dark-tint: $dark-tint,
   dark: $dark,
-  darker: $darker,
+  dark-shade: $dark-shade,
+  grey: $grey,
   white: $white,
   white-dim: $white-dim,
   yellow: $yellow,
+  yellow-shade: $yellow-shade,
 );
 
 @each $color-name, $value in $colors {
