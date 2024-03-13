@@ -4,11 +4,13 @@
 $dark-tint: #242424;
 $dark: #181818;
 $dark-shade: 101010;
-$grey: #d6d6d6;
+$grey: #888888;
 $white: #fff;
 $white-dim: #ece9e4;
 $yellow: #ffd100;
 $yellow-shade: #ffc200;
+$yellow-light: hsl(49, 100%, 80%);
+$yellow-dark: hsl(49, 100%, 30%);
 
 // map
 $colors: (
@@ -20,6 +22,8 @@ $colors: (
   white-dim: $white-dim,
   yellow: $yellow,
   yellow-shade: $yellow-shade,
+  yellow-light: $yellow-light,
+  yellow-dark: $yellow-dark,
 );
 
 @each $color-name, $value in $colors {

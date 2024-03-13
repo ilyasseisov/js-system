@@ -13,6 +13,7 @@ input {
   font-family: 'Gilroy', Arial, Helvetica, sans-serif;
   color: $yellow;
   font-size: 20px;
+  box-shadow: 0 4px 32px rgba($color: $yellow-shade, $alpha: 0.3);
   //
   @media (min-width: $md) {
     font-size: 24px;
