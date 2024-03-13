@@ -37446,13 +37446,14 @@ img {
   -webkit-mask-image: linear-gradient(0deg, transparent, #fff 20%, #fff 80%, transparent);
 }
 
-#hero {
-  position: relative;
-}
-#hero h1 {
+.gradient-text {
   background-image: linear-gradient(rgb(229, 229, 229), rgb(82, 82, 82));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+#hero {
+  position: relative;
 }
 #hero .glow {
   width: 800px;

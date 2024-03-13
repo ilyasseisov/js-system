@@ -109,17 +109,16 @@ img {
   );
 }
 
+.gradient-text {
+  background-image: linear-gradient(rgb(229, 229, 229), rgb(82, 82, 82));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 #hero {
   //
   position: relative;
 
-  //
-  h1 {
-    background-image: linear-gradient(rgb(229, 229, 229), rgb(82, 82, 82));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  //
   .glow {
     width: 800px;
     height: 600px;
